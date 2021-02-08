@@ -3,97 +3,99 @@
 
   <head>
       <meta charset="utf-8">
-
-      <!-- HER KAN DU ENDRA NAMNET TIL NETTSIDA ved å endra det kvite -->
-      <title>Namn</title>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.6/Tone.js"></script>
-
-
-      <!-- HER KAN DU ENDRA STILEN TIL APPEN */ -->
-      <style>
-          body {
-              /* HER KAN DU ENDRA FARGEN TIL BAKGRUNNEN */
-              background-color: lightblue;
-          }
-          h1{
-              /* HER KAN DU ENDRA FARGEN TIL TITTELEN */
-              color:blueviolet;
-              /* HER KAN DU ENDRA FONTEN TIL TITTELEN */
-              font-family:sans-serif;
-          }
-          .knapp {
-              /* HER KAN DU ENDRA FARGEN TIL KNAPPENE */
-              background-color: yellowgreen;
-              /* HER KAN DU ENDRA FARGEN TIL TEKSTEN I KNAPPENE */
-              color:red;
-              /* HER KAN DU ENDRA STØRRELSEN TIL KNAPPENE */
-              padding:7px;
-          }
-          .slider::-moz-range-thumb {
-              /* HER KAN DU ENDRA HØGDEN TIL SLIDEREN */
-              height:25px;
-              /* HER KAN DU ENDRA BREIDDEN TIL SLIDEREN */
-              width:25px;
-              /* HER KAN DU ENDRA FARGEN TIL SLIDEREN */
-              background: #4CAF50;
-            }
-
-      </style>
-      <script>
-      const address = "https://jokermusikk.github.io/lyder-vang-2021-01-25/";
-      // address = "";
-      </script>
+      <title> NAMN APPEN </title>
   </head>
 
     <body>
 
-        <!-- HER KAN DU ENDRA TITTELEN TIL APPEN -->
-        <h1> TITTEL</h1>
-        <!-- HER KAN DU ENDRA BESKRIVELSEN AV APPEN -->
-        <p>Beskrivelse av appen</p>
+        <!-- HER KAN DU ENDRA TEKSTEN I APPEN -->
+        <h1> TITTEL </h1>
+        <p> TEKST UNDER TITTELEN </p>
+        <img style="width:250px;" src="https://media.artsper.com/artwork/339283_1_m.jpg"/><br><br>
 
-        <!-- HER KAN DU ENDRA NAMNET TIL KNAPPEN ved å endra det kvite -->
-        <button id="knapp1" class="knapp extra-knapp">Namn knappen</button>
-        <!-- DU KAN ENDRA MINIMUM OG MAKSIMUM VERDIENE -->
-        <input type="range" min="0.25" max="20" value="5" class="slider" id="range1"><br><br>
+        <button id="knapp1" class="knapp"> KNAPP 1 </button><br>
+        <input id="range1" type="range" min="0.10" max="10" class="slider"><br><br>
 
-        <!-- HER KAN DU ENDRA NAMNET TIL KNAPPEN ved å endra det kvite -->
-        <button id="knapp2" class="knapp">Namn knappen</button>
-        <!-- DU KAN ENDRA MINIMUM OG MAKSIMUM VERDIENE -->
-        <input type="range" min="0.25" max="20" value="5" class="slider" id="range2">
+        <button id="knapp2" class="knapp"> KNAPP 2 </button><br>
+        <input id="range2" type="range" min="0.10" max="10" class="slider"><br><br>
 
-        <!-- SCRIPT, IKKJE ENDRA DET -->
+        <button id="knapp3" class="knapp"> KNAPP 3 </button><br>
+        <input id="range3" type="range" min="0.10" max="10" class="slider"><br><br>
+
+        <button id="knapp4" class="knapp"> KNAPP 4 </button><br>
+        <input id="range4" type="range" min="0.10" max="10" class="slider"><br><br>
+
+        <button id="knapp5" class="knapp"> KNAPP 5 </button><br>
+        <input id="range5" type="range" min="0.10" max="10" class="slider"><br><br>
+
         <script type="text/javascript">
-
-           /* SKRIV INN ADRESSA TIL DIN EIGEN LYD #1 */
-            const lyd1 = new Tone.Player( address + "AHE1.mp3").toDestination();
-            /* SKRIV INN ADRESSA TIL DIN EIGEN LYD #2 */
-            const lyd2 = new Tone.Player( address + "AHE2.mp3").toDestination();
-
-            /* DENNE DELEN AV KODEN SEIER AT LYDEN STARTAR NÅR KNAPPEN BLIR TRYKT PÅ, IKKJE ENDRA DET */
-            const lydene = [lyd1, lyd2];
-            function playSound(range,element,button){
-                    var slider = document.getElementById( range );
-                    slider.oninput = function() {
-                      element.playbackRate = this.value;
-
-                    }
-                    document.getElementById( button ).addEventListener("click", function() {
-                      if (element.state !== 'started') {
-                        element.loop = true;
-                        element.start();
-                      } else {
-                        element.stop();
-                      }
-                    });
-            };
-            for (let i=1; i<3; i++){
-                 const range = String("range" + i);
-                const lyd = lydene[i-1];
-                 const knapp = String("knapp" + i);
-                 playSound(range, lyd, knapp);
-                 };
-
+        const lyd1 = "JE1.mp3";
+        const lyd2 = "EE1.mp3";
+        const lyd3 = "EE1.mp3";
+        const lyd4 = "SA2.mp3";
+        const lyd5 = "ME3b.mp3";
+        const lyd6 = "";
+        const lyd7 = "";
+        const lyd8 = "";
+        const lyd9 = "";
+        const lyd10 = "";
         </script>
+
+
+
+
+        <!-- HER KAN DU ENDRA STILEN TIL APPEN */ -->
+        <style>
+            body {
+                margin-left:2rem;
+                font-size:2rem;
+                /* FARGEN TIL BAKGRUNNEN */
+                background-color: antiquewhite;
+            }
+            h1{
+                /* FARGEN TIL TITTELEN */
+                color:indigo;
+                /* FONTEN TIL TITTELEN */
+                font-family:monospace;
+            }
+            p{
+                /* FARGEN TIL UNDERTITTELEN */
+                color:orange;
+                /* FONTEN TIL UNDERTITTELEN */
+                font-family:sans-serif;
+            }
+            .knapp {
+                border:none;
+                /* FARGEN TIL KNAPPENE */
+                background-color: pink;
+                /* FARGEN TIL TEKSTEN I KNAPPENE */
+                color:blueviolet;
+                /* STØRRELSEN TIL KNAPPENE */
+                padding:10px;
+            }
+            .slider{
+                -webkit-appearance: none;
+                /* BAKGRUNNFARGE TIL SLIDEREN */
+                background-color:lightblue;
+                /* BREIDDE TIL SLIDEREN */
+                width:180px;
+            }
+            .slider::-webkit-slider-thumb{
+                -webkit-appearance: none;
+                appearance: none;
+                /* HØGDEN TIL SLIDEREN */
+                height:15px;
+                /* BREIDDEN TIL SLIDEREN */
+                width:35px;
+                /* FARGEN TIL SLIDEREN */
+                background: darksalmon;
+              }
+        </style>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.6/Tone.js"></script>
+        <script src="./script.js"></script>
 
     </body>
