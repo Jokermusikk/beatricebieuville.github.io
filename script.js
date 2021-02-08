@@ -1,4 +1,3 @@
-const address = "https://jokermusikk.github.io/lyder-vang-2021-01-25/";
 const players = [];
 const player1 = new Tone.Player( address + lyd1).toDestination();
 players.push(player1);
