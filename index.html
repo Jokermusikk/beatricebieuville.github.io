@@ -37,7 +37,7 @@
               /* HER KAN DU ENDRA FARGEN TIL SLIDEREN */
               background: #4CAF50;
             }
-          
+
       </style>
       <script>
       const address = "https://beatricebieuville.github.io/";
@@ -73,12 +73,12 @@
             /* DENNE DELEN AV KODEN SEIER AT LYDEN STARTAR NÅR KNAPPEN BLIR TRYKT PÅ, IKKJE ENDRA DET */
             const lydene = [lyd1, lyd2];
             function playSound(range,element,button){
-                    var slider = document.getElementById(arguments[0]);
+                    var slider = document.getElementById( range );
                     slider.oninput = function() {
                       element.playbackRate = this.value;
 
                     }
-                    document.getElementById(arguments[2]).addEventListener("click", function() {
+                    document.getElementById( button ).addEventListener("click", function() {
                       if (element.state !== 'started') {
                         element.loop = true;
                         element.start();
