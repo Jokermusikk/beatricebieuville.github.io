@@ -29,8 +29,10 @@ function playSound(range,element,button){
           if (element.state !== 'started') {
             element.loop = true;
             element.start();
+            this.classList.add('playing');
           } else {
             element.stop();
+            this.classList.remove('playing');
           }
         });
 };
