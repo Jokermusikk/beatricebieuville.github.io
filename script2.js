@@ -52,8 +52,4 @@ const gainNodes = [];
 for (let i=1; i<11; i++){
     gainNodes.push(new Tone.Gain(0,"decibel").toDestination());
     prepareSound(i);
-        const range = String("range" + i);
-     const lyd = players[i-1];
-     const knapp = String("knapp" + i);
-     playSound(range, lyd, knapp);
 };
