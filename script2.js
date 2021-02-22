@@ -50,6 +50,6 @@ function prepareSound(index){
 const gainNodes = [];
 
 for (let i=1; i<11; i++){
-    gainNodes.push(new Tone.Gain(1,"decibel").toDestination());
+    gainNodes.push(new Tone.Gain(0,"decibel").toDestination());
     prepareSound(i);
 };
