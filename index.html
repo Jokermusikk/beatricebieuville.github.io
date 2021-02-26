@@ -5,45 +5,21 @@
       <meta charset="utf-8">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.6/Tone.js"></script>
       <script> const address = "https://jokermusikk.github.io/lyder-vang-2021-01-25/"; </script>
-      <title> NAMN APPEN </title>
+      <title> LYDER FRÅ VANG </title>
   </head>
 
     <body>
 
         <!-- HER KAN DU ENDRA TEKSTEN OG LYDENE I APPEN -->
-        <h1> TITTEL </h1>
-        <p> TEKST UNDER TITTELEN </p>
+        <h1> ELEKTRONISKMUSIKK I JOKERSPACE </h1>
+        <p> Barna i 4. klass frå Vestre Slidre skule og Vang skule har laga appar med eige lydar. Trykk på namnet derans for å sjå det som dei har laga! </p>
 
-        <img style="width:250px;" src="https://media.artsper.com/artwork/339283_1_m.jpg"/><br><br>
-
-        <button id="knapp1" class="knapp"> KNAPP 1 </button><br>
-        <input id="range1" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp2" class="knapp"> KNAPP 2 </button><br>
-        <input id="range2" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp3" class="knapp"> KNAPP 3 </button><br>
-        <input id="range3" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp4" class="knapp"> KNAPP 4 </button><br>
-        <input id="range4" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp5" class="knapp"> KNAPP 5 </button><br>
-        <input id="range5" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <script type="text/javascript">
-        const lyd1 = "JE1.mp3";
-        const lyd2 = "EE1.mp3";
-        const lyd3 = "EE1.mp3";
-        const lyd4 = "SA2.mp3";
-        const lyd5 = "ME3b.mp3";
-        const lyd6 = "";
-        const lyd7 = "";
-        const lyd8 = "";
-        const lyd9 = "";
-        const lyd10 = "";
-        </script>
-
+        <a href="./Laiba-Marie-Vaar.html">Laiba, Marie og Vaar</a></br>
+          <a href="./Torgrim-Vetle.html">Torgrim og Vetle</a></br>
+          <a href="./Even-Isaac.html">Even og Isaac</a></br>
+          <a href="./Manou-Jenny.html">Manou og Jenny</a></br>
+          <a href="./Ronja.html">Ronja</a></br>
+          <a href="./Sigrid-Eunike.html">Sigrid og Eunike</a></br>
 
 
 
@@ -57,51 +33,43 @@
             }
             h1{
                 /* FARGEN TIL TITTELEN */
-                color:indigo;
+                color:lightsalmon;
                 /* FONTEN TIL TITTELEN */
-                font-family:monospace;
+                font-family:montserrat;
             }
             p{
                 /* FARGEN TIL UNDERTITTELEN */
                 color:orange;
                 /* FONTEN TIL UNDERTITTELEN */
                 font-family:sans-serif;
+                font-size:1.2rem;
             }
-            .knapp {
+            a {
+                line-height:5rem;
                 border:none;
+                border-radius: 0.4rem;
                 /* FARGEN TIL KNAPPENE */
-                background-color: pink;
+                background-color: white;
                 /* FARGEN TIL TEKSTEN I KNAPPENE */
                 color:blueviolet;
                 /* STØRRELSEN TIL KNAPPENE */
                 padding:10px;
+                text-decoration: none;
+                font-family:montserrat;
+                font-size:1.3rem;
+                color:lightseagreen;
             }
-            .slider{
-                -webkit-appearance: none;
-                /* BAKGRUNNFARGE TIL SLIDEREN */
-                background-color:lightblue;
-                /* BREIDDE TIL SLIDEREN */
-                width:180px;
+            a:hover{
+              background-color:lightseagreen;
+              color:white;
             }
-            .slider::-webkit-slider-thumb{
-                -webkit-appearance: none;
-                appearance: none;
-                /* HØGDEN TIL SLIDEREN */
-                height:15px;
-                /* BREIDDEN TIL SLIDEREN */
-                width:35px;
-                /* FARGEN TIL SLIDEREN */
-                background: darksalmon;
-              }
-            .playing {
-                background-color: lightgreen;
-            }
+
         </style>
 
 
 
 
 
-        <script src="https://jokermusikk.github.io/script.js"></script>
+        <script src="https://jokermusikk.github.io/script2.js"></script>
 
     </body>

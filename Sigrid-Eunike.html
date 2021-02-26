@@ -11,10 +11,8 @@
     <body>
 
         <!-- HER KAN DU ENDRA TEKSTEN OG LYDENE I APPEN -->
-        <h1> MUSIKK FRÅ 4. KLASSE </h1>
-        <p> Her kan du laga din eigen musikk med lydar som vart tatt opp av 4. klassen ved Vestre Slidre skulen :-) </p>
-
-        <img style="width:250px;" src="https://images.squarespace-cdn.com/content/v1/54ad57e6e4b011420282e29c/1539700782097-W7G2Y9VJ2O4UUB95WTFL/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UU_i9-ln4sAC0TGEmkfMFKJn5Kcyb6Y0O9dBHu3N61jtpC969RuPXvt2ZwyzUXQf7Q/ByLarm_logoutvikling+copy_6.gif"/><br><br>
+        <h1> Eunike og Sigrid de er kule </h1>
+        <p> Halla vi er Eunike og Sigrid </p>
 
         <button id="knapp1" class="knapp"> KNAPP 1 </button><br>
         <input id="range1" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
@@ -24,23 +22,24 @@
         <input id="range2" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
         <input id="gain2" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
 
-
         <button id="knapp3" class="knapp"> KNAPP 3 </button><br>
         <input id="range3" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
         <input id="gain3" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
 
         <button id="knapp4" class="knapp"> KNAPP 4 </button><br>
         <input id="range4" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
+        <input id="gain4" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
 
         <button id="knapp5" class="knapp"> KNAPP 5 </button><br>
         <input id="range5" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
+        <input id="gain5" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
 
         <script type="text/javascript">
-        const lyd1 = "LM1.mp3";
-        const lyd2 = "TV2.mp3";
-        const lyd3 = "LM2.mp3";
-        const lyd4 = "LM2.mp3";
-        const lyd5 = "TV2.mp3";
+        const lyd1 = "SE1.mp3";
+        const lyd2 = "SE2.mp3";
+        const lyd3 = "SE3.mp3";
+        const lyd4 = "SE1.mp3";
+        const lyd5 = "EI1.mp3";
         const lyd6 = "";
         const lyd7 = "";
         const lyd8 = "";
@@ -55,15 +54,16 @@
         <style>
             body {
                 margin-left:2rem;
-                font-size:1.6rem;
+                font-size:2rem;
                 /* FARGEN TIL BAKGRUNNEN */
-                background-color: antiquewhite;
+                background-color: Aquamarine
+
             }
             h1{
                 /* FARGEN TIL TITTELEN */
                 color:indigo;
                 /* FONTEN TIL TITTELEN */
-                font-family:montserrat;
+                font-family:monospace;
             }
             p{
                 /* FARGEN TIL UNDERTITTELEN */
@@ -74,18 +74,21 @@
             .knapp {
                 border:none;
                 /* FARGEN TIL KNAPPENE */
-                background-color: orange;
+                background-color: pink;
                 /* FARGEN TIL TEKSTEN I KNAPPENE */
                 color:blueviolet;
                 /* STØRRELSEN TIL KNAPPENE */
                 padding:10px;
+            }
+            .playing{
+              background-color:yellow;
             }
             .slider{
                 -webkit-appearance: none;
                 /* BAKGRUNNFARGE TIL SLIDEREN */
                 background-color:lightblue;
                 /* BREIDDE TIL SLIDEREN */
-                width:250px;
+                width:180px;
             }
             .slider::-webkit-slider-thumb{
                 -webkit-appearance: none;
@@ -96,9 +99,6 @@
                 width:35px;
                 /* FARGEN TIL SLIDEREN */
                 background: darksalmon;
-              }
-              .playing{
-                background-color: lightgreen;
               }
         </style>
 
