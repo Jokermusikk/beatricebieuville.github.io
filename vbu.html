@@ -3,121 +3,77 @@
 
   <head>
       <meta charset="utf-8">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.6/Tone.js"></script>
-      <script> const address = "https://jokermusikk.github.io/lyder-vang-2021-01-25/"; </script>
-      <title> LYDER FRÅ VANG </title>
+      <title> Vang skule </title>
   </head>
 
     <body>
 
-        <!-- HER KAN DU ENDRA TEKSTEN OG LYDENE I APPEN -->
-        <h1> LYDER FRÅ VANG </h1>
-        <p> Her kan ein laga musikk med lydar som vart tatt opp av 4. klassen i Vang. </p>
+      <div style="background-color:rgba(250,250,250,0.7);padding:2rem;">
+        <h1> ELEKTRONISK MUSIKK FRÅ VANG </h1>
+        <p> Trykk på namna for å sjå det som gruppa har laga! </p>
+      </div>
 
-        <img style="width:250px;" src="https://images.squarespace-cdn.com/content/v1/54ad57e6e4b011420282e29c/1539700782097-W7G2Y9VJ2O4UUB95WTFL/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UU_i9-ln4sAC0TGEmkfMFKJn5Kcyb6Y0O9dBHu3N61jtpC969RuPXvt2ZwyzUXQf7Q/ByLarm_logoutvikling+copy_6.gif"/><br><br>
-
-        <button id="knapp1" class="knapp"> Vre </button><br>
-        <input id="range1" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp2" class="knapp"> Kak </button><br>
-        <input id="range2" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp3" class="knapp"> Kakak </button><br>
-        <input id="range3" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp4" class="knapp"> Tøptøp </button><br>
-        <input id="range4" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp5" class="knapp"> String </button><br>
-        <input id="range5" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp6" class="knapp"> String </button><br>
-        <input id="range6" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp7" class="knapp"> String </button><br>
-        <input id="range7" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp8" class="knapp"> String </button><br>
-        <input id="range8" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp9" class="knapp"> String </button><br>
-        <input id="range9" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp10" class="knapp"> String </button><br>
-        <input id="range10" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-
-        <script type="text/javascript">
-        const lyd1 = "JE2.mp3";
-        const lyd2 = "EE1.mp3";
-        const lyd3 = "EE2.mp3";
-        const lyd4 = "SA2.mp3";
-        const lyd5 = "ME3b.mp3";
-        const lyd6 = "ME4.mp3";
-        const lyd7 = "SA1.mp3";
-        const lyd8 = "AHE1.mp3";
-        const lyd9 = "AHE2.mp3";
-        const lyd10 = "SA1.mp3";
-        </script>
-
-
+      <div style="padding:3rem 0rem;">
+          <a href="./apper/Eirik-eirin.html">Eirik og Eirin</a><br>
+          <a href="./apper/Halvor-alve.html">Halvor og Alve</a><br>
+          <a href="./apper/Halvor-alve.html">Erla og Maya</a><br>
+          <a href="./apper/Halvor-alve.html">Erle</a><br>
+     </div>
 
 
         <!-- HER KAN DU ENDRA STILEN TIL APPEN */ -->
         <style>
             body {
-                margin-left:2rem;
-                font-size:2rem;
+              margin:0;
+              width:100%;
+                font-size:1rem;
                 /* FARGEN TIL BAKGRUNNEN */
-                background-color: antiquewhite;
+                background-image: url("bg-vbu.jpg");
+                background-size: cover;
+                background-repeat:no-repeat;
+                background-attachment: fixed;
             }
             h1{
                 /* FARGEN TIL TITTELEN */
-                color:indigo;
+                color:#00b2d4;
                 /* FONTEN TIL TITTELEN */
                 font-family:montserrat;
             }
             p{
                 /* FARGEN TIL UNDERTITTELEN */
-                color:orange;
+                color:#00b2d4;
                 /* FONTEN TIL UNDERTITTELEN */
                 font-family:sans-serif;
+                font-size:1.2rem;
+                max-width:32rem;
             }
-            .knapp {
+            a {
+                margin:3rem;
+                line-height:5rem;
                 border:none;
+                border-radius: 0.4rem;
                 /* FARGEN TIL KNAPPENE */
-                background-color: pink;
+                background-color: white;
                 /* FARGEN TIL TEKSTEN I KNAPPENE */
-                color:blueviolet;
                 /* STØRRELSEN TIL KNAPPENE */
-                padding:10px;
+                padding:1rem;
+                text-decoration: none;
+                font-family:montserrat;
+                font-size:1.3rem;
+                background-color:#f6d44d;
+                color:white;
             }
-            .slider{
-                -webkit-appearance: none;
-                /* BAKGRUNNFARGE TIL SLIDEREN */
-                background-color:lightblue;
-                /* BREIDDE TIL SLIDEREN */
-                width:180px;
+            a:hover{
+              color:#f6d44d;
+              background-color:rgba(250,250,250,0.8);
             }
-            .slider::-webkit-slider-thumb{
-                -webkit-appearance: none;
-                appearance: none;
-                /* HØGDEN TIL SLIDEREN */
-                height:15px;
-                /* BREIDDEN TIL SLIDEREN */
-                width:35px;
-                /* FARGEN TIL SLIDEREN */
-                background: darksalmon;
-              }
-            .playing {
-                background-color: lightgreen;
-            }
+
         </style>
 
 
 
 
 
-        <script src="https://jokermusikk.github.io/script.js"></script>
+        <script src="https://jokermusikk.github.io/script2.js"></script>
 
     </body>

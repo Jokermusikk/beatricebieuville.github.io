@@ -3,103 +3,75 @@
 
   <head>
       <meta charset="utf-8">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.6/Tone.js"></script>
-      <script> const address = "https://jokermusikk.github.io/lyder-slidre-2021-02-05/"; </script>
-      <title> NAMN APPEN </title>
+      <title> Vestre Slidre </title>
   </head>
 
     <body>
 
-        <!-- HER KAN DU ENDRA TEKSTEN OG LYDENE I APPEN -->
-        <h1> MUSIKK FRÅ 4. KLASSE </h1>
-        <p> Her kan du laga din eigen musikk med lydar som vart tatt opp av 4. klassen ved Vestre Slidre skulen :-) </p>
+        <div style="background-color:rgba(250,250,250,0.9);padding:2rem;">
+        <h1> ELEKTRONISKMUSIKK FRÅ VESTRE SLIDRE </h1>
+        <p> Trykk på namna derans for å sjå det som gruppa har laga! </p>
+      </div>
 
-        <img style="width:250px;" src="https://images.squarespace-cdn.com/content/v1/54ad57e6e4b011420282e29c/1539700782097-W7G2Y9VJ2O4UUB95WTFL/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UU_i9-ln4sAC0TGEmkfMFKJn5Kcyb6Y0O9dBHu3N61jtpC969RuPXvt2ZwyzUXQf7Q/ByLarm_logoutvikling+copy_6.gif"/><br><br>
-
-        <button id="knapp1" class="knapp"> KNAPP 1 </button><br>
-        <input id="range1" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-        <input id="gain1" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp2" class="knapp"> KNAPP 2 </button><br>
-        <input id="range2" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-        <input id="gain2" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-
-        <button id="knapp3" class="knapp"> KNAPP 3 </button><br>
-        <input id="range3" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-        <input id="gain3" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp4" class="knapp"> KNAPP 4 </button><br>
-        <input id="range4" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <button id="knapp5" class="knapp"> KNAPP 5 </button><br>
-        <input id="range5" type="range" min="0.10" max="10" step="0.1" value="1" class="slider"><br><br>
-
-        <script type="text/javascript">
-        const lyd1 = "LM1.mp3";
-        const lyd2 = "TV2.mp3";
-        const lyd3 = "LM2.mp3";
-        const lyd4 = "LM2.mp3";
-        const lyd5 = "TV2.mp3";
-        const lyd6 = "";
-        const lyd7 = "";
-        const lyd8 = "";
-        const lyd9 = "";
-        const lyd10 = "";
-        </script>
-
-
+      <div style="padding:3rem 0rem;">
+        <a href="./apper/Laiba-Marie-Vaar.html">Laiba, Marie og Vaar</a></br>
+          <a href="./apper/Torgrim-Vetle.html">Torgrim og Vetle</a></br>
+          <a href="./apper/Even-Isaac.html">Even og Isaac</a></br>
+          <a href="./apper/Manou-Jenny.html">Manou og Jenny</a></br>
+          <a href="./apper/Ronja.html">Ronja</a></br>
+          <a href="./apper/Sigrid-Eunike.html">Sigrid og Eunike</a></br>
+     </div>
 
 
         <!-- HER KAN DU ENDRA STILEN TIL APPEN */ -->
         <style>
             body {
-                margin-left:2rem;
-                font-size:1.6rem;
+              margin:0;
+              width:100%;
+                font-size:1rem;
                 /* FARGEN TIL BAKGRUNNEN */
-                background-color: antiquewhite;
+                background-image: url("bg-vs.jpg");
+                background-attachment: fixed;
+                background-repeat:no-repeat;
+                background-size:cover;
             }
             h1{
                 /* FARGEN TIL TITTELEN */
-                color:indigo;
+                color:#f6d44d;
                 /* FONTEN TIL TITTELEN */
                 font-family:montserrat;
             }
             p{
                 /* FARGEN TIL UNDERTITTELEN */
-                color:orange;
+                color:#f6d44d;
+                border-radius:0.4rem;
+                padding:1rem;
+                max-width:32rem;
                 /* FONTEN TIL UNDERTITTELEN */
                 font-family:sans-serif;
+                font-size:1.2rem;
             }
-            .knapp {
+            a {
+              margin-left:3rem;
+                line-height:5rem;
                 border:none;
+                border-radius: 0.4rem;
                 /* FARGEN TIL KNAPPENE */
-                background-color: orange;
+                background-color: white;
                 /* FARGEN TIL TEKSTEN I KNAPPENE */
-                color:blueviolet;
                 /* STØRRELSEN TIL KNAPPENE */
-                padding:10px;
+                padding:1rem;
+                text-decoration: none;
+                font-family:montserrat;
+                font-size:1.3rem;
+                background-color:#00b2d4;
+                color:white;
             }
-            .slider{
-                -webkit-appearance: none;
-                /* BAKGRUNNFARGE TIL SLIDEREN */
-                background-color:lightblue;
-                /* BREIDDE TIL SLIDEREN */
-                width:250px;
+            a:hover{
+              background-color:rgba(250,250,250,0.9);
+              color:#00b2d4;
             }
-            .slider::-webkit-slider-thumb{
-                -webkit-appearance: none;
-                appearance: none;
-                /* HØGDEN TIL SLIDEREN */
-                height:15px;
-                /* BREIDDEN TIL SLIDEREN */
-                width:35px;
-                /* FARGEN TIL SLIDEREN */
-                background: darksalmon;
-              }
-              .playing{
-                background-color: lightgreen;
-              }
+
         </style>
 
 
