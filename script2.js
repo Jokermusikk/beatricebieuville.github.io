@@ -24,17 +24,17 @@ players.push(player10);
 function prepareSound(index){
         var player = players[index-1];
         player.connect(gainNodes[index-1]);
-        
+
         var pitchSlider = document.getElementById(String("range" + index));
         pitchSlider.oninput = function() {
           player.playbackRate = this.value;
         }
-        
+
         var gainSlider = document.getElementById(String("gain" + index));
         gainSlider.oninput = function() {
           gainNodes[index-1].gain.rampTo(this.value,0.01);
         }
-        
+
         var playButton = document.getElementById(String("knapp" + index));
         playButton.addEventListener("click", function() {
           if (player.state !== 'started') {
